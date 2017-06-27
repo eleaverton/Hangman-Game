@@ -4,49 +4,62 @@
 	<title>
 		Bakery Hangman
 	</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<script type = "text/javascript" src="assets/javascript/game.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Pacifico" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
 </head>
 <body>
 
 	<div class = "container">
-		<div class = "row">
+		<div class = "jumbotron">
 			<h1> Hangman </h1>
 			<h2> Bakery Style </h2>
 		</div>
 		<div class = "row">
 			<div class = "col-md-3">
+				<section id = "win">
 				Wins
 				<section id = "winsNum">
 					0
 				</section>
+				</section>
 
 			</div>
 			<div class = "col-md-6">
+			<section id = center>
 			Press spacebar to start a new round!
 
 				<div id = "word">
 					Current Word
 					<section id = "wordBlanks">
-						_ _ _ _ _ _
+						
 					</section>
 					<section id = "messageSpace">
 					</section>
+					<img id = "foodPrize" width = "300px"/>
 				</div>
-
+			</section>
 
 			</div>
 			<div class = "col-md-3">
+			<section id = "left">
+			<section id = "guessesLeftBox">
 				Guesses Left
 					<section id = "guessesLeft">
 						12
 					</section>
+			</section>
+			<div id = "lettersGuessedBox">
 				Letters Guessed
-					<section id = "lettersGuessed">
+					<section id = "lettersGuessed" >
 						none
 					</section>
+			</div>
 
-
+			</section>
 			</div>
 
 		</div>
